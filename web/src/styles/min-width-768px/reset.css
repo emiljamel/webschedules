@@ -1,0 +1,307 @@
+@import url('../style.css');
+@import url('../max-width-767px/reset.css');
+
+@media only screen and (min-width: 768px) {
+    .hd-auth {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 32px;
+        margin-top: 16px;
+        padding: 0 16px;
+        background-color: transparent;
+        border-bottom: 1px solid transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    .lang-bar {
+        display: inline-block;
+        margin: 0;
+        position: relative;
+    }
+    
+    .favicon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 32px;
+        line-height: 32px;
+        background-color: transparent;
+        border-radius: 0;
+        padding: 0 16px;
+        cursor: pointer;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .favicon span {
+        font-size: 14px;
+        color: #188038;
+        padding-right: 6px;
+        text-transform: initial;
+        pointer-events: none;
+    }
+
+    .favicon .expand {
+        border-color: #188038 transparent;
+        border-style: solid;
+        border-width: 5px 5px 0 5px;
+        pointer-events: none;
+        position: relative;
+    }
+
+    .lang-bar > .dropdown {
+        min-width: 160px;
+        top: 100%;
+        right: 0;
+        z-index: 3;
+    }
+
+    .dropdown {
+        display: none;
+        flex-direction: column;
+        height: auto;
+        max-height: calc(100vh - 86px);
+        margin-top: 16px;
+        background-color: white;
+        border: 1px solid #dadce0;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+        overflow-y: auto;
+        position: absolute;        
+    }
+
+    .data-dropdown {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .data-dropdown a {
+        display: flex;
+        align-items: center;
+        height: 36px;
+        padding: 0 16px;
+        cursor: pointer;
+        font-size: 14px;
+        color: black;
+        text-transform: initial;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .mn-auth {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding: 0;
+        position: relative;
+        z-index: unset;
+    }
+    
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        overflow: auto;
+        position: relative;
+    }
+
+    #content::before,
+    #content::after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 16px;
+    }
+    
+    .box-container {
+        display: inline-block;
+        width: 400px;
+        height: auto;
+        margin: auto;
+        user-select: none;
+        position: relative;
+    }
+    
+    .box-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .box-header img {
+        display: flex;
+        width: 48px;
+        height: 48px;
+        margin: 0;
+    }
+    
+    .box-header h2 {
+        margin: 16px 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: black;
+        text-transform: capitalize;
+    }
+    
+    .box-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 359px;
+        margin: 0;
+        padding: 0 32px 32px;
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+    }
+    
+    .tab-header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #dadce0;
+        margin-top: 16px;
+        position: relative;
+    }
+    
+    .tab-wrapper {
+        display: inline-block;
+        margin: 0;
+        position: relative;
+    }
+
+    .tab-wrapper h2 {
+        display: inline-block;
+        margin: 11px 0 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+        text-transform: capitalize;
+    }
+    
+    .tab-wrapper p {
+        font-size: 14px;
+        color: black;
+        text-transform: initial;
+        white-space: normal;
+        margin: 16px 0;
+    }
+
+    .box-content > #root {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        align-content: space-between;
+        width: 100%;
+    }
+    
+    .tab-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        position: relative;
+    }
+    
+    .tab-item {
+        display: inline-block;
+        width: 100%;
+        margin: 8px 0;
+        position: relative;
+    }
+        
+    .tab-item label {
+        display: inline-block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: black;
+        text-transform: capitalize;
+    }
+    
+    .tab {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #dadce0;
+        border-radius: 4px;
+        margin: 0;
+        position: relative;
+    }
+    
+    .tab:focus-within {
+        box-shadow: inset 0 0 0 2px #188038;
+        border: 1px solid transparent;
+    }
+    
+    .tab input {
+        width: 100%;
+        min-width: 1px;
+        height: 32px;
+        padding: 0 10px;
+        font-size: 16px;
+        background-color: transparent;
+        color: black;
+        border: 0;
+        border-radius: 4px;
+        outline: none;
+        text-overflow: ellipsis;
+    }
+        
+    .tab-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        position: relative;
+    }
+    
+    .btn-submit {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .tab-button button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 32px;
+        background-color: #188038;
+        border: 1px solid #188038;
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        text-transform: capitalize;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+}

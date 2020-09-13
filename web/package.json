@@ -1,0 +1,39 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./dist",
+    "start-dev": "webpack-dev-server --config webpack.dev.js --host 0.0.0.0 --open",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emiljamel/WebSchedules.git"
+  },
+  "author": "Emil Jamel Mahmuda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emiljamel/WebSchedules/issues"
+  },
+  "homepage": "https://github.com/emiljamel/WebSchedules#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^4.2.1",
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.1"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

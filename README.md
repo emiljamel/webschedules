@@ -1,0 +1,1 @@
+Web Schedules is a course schedule processing software to minimize the equal time of teaching staff at the same time.

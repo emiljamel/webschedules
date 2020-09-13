@@ -1,0 +1,328 @@
+@import url('../style.css');
+@import url('../max-width-767px/settings.css');
+
+@media only screen and (min-width: 768px) {
+    .hd-settings {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 55px;
+        padding: 0 32px;
+        background-color: white;
+        border-bottom: 1px solid #dadce0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+    
+    .hd-settings > .content-space:nth-child(2) {
+        margin-left: 16px;
+    }
+
+    .content-space > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        cursor: pointer;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .content-space > a:hover {
+        background-color: #ebebeb;
+    }
+    
+    .content-space > a svg {
+        fill: rgba(0, 0, 0, .54);
+        width: 24px;
+        height: 24px;
+        pointer-events: none;
+    }
+
+    .content-space > h1 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: black;
+        text-transform: capitalize;
+    }
+    
+    .mn-settings {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 55px;
+        position: relative;
+        z-index: unset;
+    }
+    
+    .mn-settings > #content {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        overflow: auto;
+        position: relative;
+    }
+
+    .box-content {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+        width: 800px;
+        height: auto;
+        margin: 16px auto;
+        padding: 16px 0;
+        user-select: none;
+        position: relative;
+    }
+    
+    .box-content:last-child {
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+    
+    .st-header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 0 16px;
+        margin: 0;
+    }
+    
+    .st-header > h2 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+        text-transform: capitalize;    
+    }
+
+    .st-content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding: 0 16px;
+        margin-top: 16px;
+    }
+
+    .general-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 36px;
+    }
+    
+    .general-item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+    
+    .general-item > label {
+        font-size: 14px;
+        color: black;
+        text-transform: initial;
+    }
+    
+    .general-item > .general {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .general-item:not(:first-child) > .general {
+        width: 180px;
+        height: auto;
+        background-color: white;
+        border: 1px solid #dadce0;
+        border-radius: 4px;
+        margin: 0;
+        position: relative;
+    }
+    
+    .general span {
+        font-size: 14px;
+        color: black;
+        text-transform: initial;    
+    }
+    
+    .general a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        margin-left: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+    }
+    
+    .general a > svg {
+        fill: rgba(0, 0, 0, .54);
+        width: 20px;
+        height: 20px;
+        pointer-events: none;
+    }
+
+    .general > .field-append {
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 32px;
+        padding: 0 10px;
+    }
+    
+    .general > .field-append span {
+        white-space: nowrap;
+        font-size: 14px;
+        color: black;
+        text-transform: initial;
+    }
+
+    .st-field {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding: 0 12px;
+    }
+
+    .field-bar {
+        display: flex;
+        align-items: center;
+        width: calc((100% / 3) - 8px);
+        background-color: white;
+        border: 1px solid #dadce0;
+        border-radius: 4px;
+        margin: 8px 4px 0;
+        position: relative;
+    }
+    
+    .field-bar:focus-within,
+    .general-item:not(:first-child) > .general:focus-within {
+        box-shadow: inset 0 0 0 2px #188038;
+        border: 1px solid transparent;
+    }
+    
+    .field-bar > input,
+    .general > input {
+        width: 100%;
+        min-width: 1px;
+        height: 32px;
+        padding-left: 10px;
+        font-size: 16px;
+        background-color: transparent;
+        color: black;
+        border: 0;
+        border-radius: 4px;
+        outline: none;
+        text-overflow: ellipsis;
+    }
+        
+    .field-bar > .delete-bar {
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 32px;
+        padding: 0 10px;
+        cursor: pointer;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .delete-bar svg {
+        fill: rgba(0, 0, 0, .54);
+        width: 20px;
+        height: 20px;
+        pointer-events: none;
+    }
+    
+    .add-to-content {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 14px;
+        color: #188038;
+        text-transform: initial;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+    }
+    
+    .st-button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        position: relative;
+    }
+    
+    .st-button > .btn-reset,
+    .st-button > .btn-submit {
+        width: 85px;
+        height: 32px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .st-button > .btn-reset {
+        margin-right: 16px;
+    }
+    
+    .st-button button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 32px;
+        border-radius: 4px;
+        font-size: 14px;
+        text-transform: capitalize;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .st-button > .btn-reset button {
+        background-color: white;
+        border: 1px solid #dadce0;
+        color: #188038; 
+    }
+    
+    .st-button > .btn-submit button {
+        background-color: #188038;
+        border: 1px solid #188038;
+        color: white; 
+    }
+        
+    .help-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        margin-left: 16px;
+        position: relative;
+    }
+    
+    .help-bar > svg {
+        fill: rgba(0, 0, 0, .54);
+        width: 20px;
+        height: 20px;
+        pointer-events: none;    
+    }
+}

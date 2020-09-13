@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Web Schedules is a course schedule processing software to minimize the equal time of teaching staff at the same time.">
+    <meta name="keywords" content="Web Schedules, Schedules Timetable">
+    <meta name="google" content="notranslate">
+    <meta name="theme-color" content="white">
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link rel="shortcut icon" href="./images/web-schedules.png" type="image/x-icon">
+</head>
+<body>
+
+    {{> header/hd-register }}
+    <main class="mn-auth">
+        <div id="content">
+            <div class="box-container">
+                <div class="box-header">
+                    <img src="./images/web-schedules.png" alt="Web Schedules">
+                    <h2>Web Schedules</h2>
+                </div>
+                <div class="box-content">
+                    <div class="tab-header">
+                        <div class="tab-wrapper">
+                            <a href="login.html" class="btn-menu">Login</a>
+                        </div>
+                        <div class="tab-wrapper">
+                            <a href="register.html" class="btn-menu active-menu">Register</a>
+                        </div>
+                    </div>
+                    <div id="root">{{> main/mn-register }}</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
